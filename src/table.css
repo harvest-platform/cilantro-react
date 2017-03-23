@@ -1,0 +1,73 @@
+/* Overrides to the base ReactTable style. */
+.ReactTable {
+  background-color: #fff;
+
+  /* Fix the position so the header is affixed. */
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 30px;
+  border: none;
+
+  /* Use to flip pagination.
+  display: flex;
+  flex-direction: column-reverse;
+  */
+}
+
+.ReactTable .-pagination {
+  font-size: 0.8em;
+  font-weight: 500;
+  flex-direction: row;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.ReactTable .-pagination .-btn {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.ReactTable .rt-table {
+  height: 100%;
+  display: block;
+}
+
+/* Tweak for padding of the table cell. */
+.ReactTable .rt-td {
+  padding: 10px;
+}
+
+.ReactTable .rt-thead .rt-th {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  box-shadow: none;
+  user-select: none;
+  padding: 10px;
+}
+
+.ReactTable .rt-thead .rt-th:hover {
+  background-color: #f9f9f9;
+}
+
+.ReactTable .rt-thead.-header {
+  //border-top: 1px solid #eee;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ReactTable .rt-tbody {
+  /* Fill the table except, offset the computed header size. */
+  height: calc(100% - 35px);
+
+  /* Overflow for scrolling */
+  overflow: scroll;
+  display: block;
+}
+
+.ReactTable .rt-tbody {
+  font-size: 0.9em;
+}

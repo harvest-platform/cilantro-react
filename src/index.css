@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid #ddd;
+}
+
+a:link, a:visited {
+  color: #555;
+}
+
+a:hover, a:active {
+  color: #333;
+  border-bottom-color: #aaa;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {
+  margin-top: 0;
+}
